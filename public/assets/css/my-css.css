@@ -1,0 +1,19 @@
+* {
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+.dropdown .fa-angle-up,
+.dropdown .fa-angle-down {
+    transition: transform 0.9s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        height: auto !important;
+    }
+
+    .container-cta {
+        margin-top: 10px;
+    }
+}
