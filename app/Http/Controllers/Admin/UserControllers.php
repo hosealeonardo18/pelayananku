@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class UserControllers extends Controller
+{
+    public function showSetting($slug)
+    {
+        dd("Profile di " . $slug);
+    }
+}

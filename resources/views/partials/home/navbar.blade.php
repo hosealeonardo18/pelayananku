@@ -56,8 +56,10 @@
             </ul>
 
             <div class="container-cta d-flex gap-2">
-                <button class="btn-cta btn-cta-warning fw-bold px-4">Masuk</button>
-                <button class="btn-cta btn-cta-primary fw-bold px-4">Pendaftaran</button>
+                <button type="button" class="btn-cta btn-cta-warning fw-bold px-4"
+                    onclick="window.location.href='/admin/login'">Masuk</button>
+                <button type="button" class="btn-cta btn-cta-primary fw-bold px-4"
+                    onclick="window.location.href='/admin/register'">Pendaftaran</button>
             </div>
         </div>
     </div>
