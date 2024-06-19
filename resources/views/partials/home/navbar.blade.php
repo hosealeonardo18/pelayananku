@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg" style="height: 100px">
     <div class="container">
-        <a class="navbar-brand" href="/"><img src="/assets/images/navbar/logo-brand.png" alt="navbar-brand"
-                style="width: 50px; height: 50px"></a>
+        <a class="navbar-brand fw-bolder" href="/"><img src="/assets/images/navbar/logo.png" alt="navbar-brand"
+                style="width: 50px; height: 50px"><span
+                style="font-size: 26px; color: #3A86FF;font-family: 'Gill Sans', sans-serif;">{{ env('APP_NAME') }}</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,8 +56,8 @@
             </ul>
 
             <div class="container-cta d-flex gap-2">
-                <button class="btn fw-bold px-4" style="background-color: #3A86FF; color:white">Masuk</button>
-                <button class="btn fw-bold px-4" style="background-color: #3A86FF; color:white">Pendaftaran</button>
+                <button class="btn-cta btn-cta-warning fw-bold px-4">Masuk</button>
+                <button class="btn-cta btn-cta-primary fw-bold px-4">Pendaftaran</button>
             </div>
         </div>
     </div>

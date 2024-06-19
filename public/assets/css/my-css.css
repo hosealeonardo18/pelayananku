@@ -3,17 +3,226 @@
     font-size: 1rem;
 }
 
+:root {
+    --blue-default: #3A86FF;
+    --blue-default-hover: #3173df;
+    --yellow-default: #FFBE0B;
+    --yellow-default-hover: #e7ad0e;
+    --font-blue-default: #225099;
+    --backgroud-black: #000000
+}
+
 .dropdown .fa-angle-up,
 .dropdown .fa-angle-down {
     transition: transform 0.9s ease-in-out;
+}
+
+.btn-cta {
+    text-decoration: none;
+    font-size: 0.85rem;
+    height: 40px;
+    padding: 8px 24px 8px 24px;
+    gap: 0px;
+    border: none;
+    border-radius: 8px;
+    opacity: 0px;
+}
+
+.btn-cta.btn-cta-warning {
+    color: white;
+    background-color: var(--yellow-default);
+}
+
+.btn-cta.btn-cta-warning:hover {
+    color: white;
+    background-color: var(--yellow-default-hover);
+}
+
+.btn-cta.btn-cta-primary {
+    color: white;
+    background-color: var(--blue-default);
+}
+
+.btn-cta.btn-cta-primary:hover {
+    color: white;
+    background-color: var(--blue-default-hover);
+}
+
+#hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    /* Menjadikan container sebagai flex container */
+    align-items: center;
+}
+
+.text-content {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+}
+
+.text-sub-content {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.hero-background {
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/images/landing-page/pexels-luis-quintero-2019331 1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+#services-section {
+    padding: 108px 0;
+}
+
+.heading {
+    color: var(--font-blue-default);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.sub-heading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.card-service {
+    width: 260px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #C9C9C9;
+    opacity: 0px;
+}
+
+#contact-section {
+    background-color: var(--blue-default);
+    padding: 108px 0;
+}
+
+#footer {
+    background-color: var(--backgroud-black);
+    padding: 108px 0;
+}
+
+.footer-font-logo {
+    font-size: 42px;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.list-menu {
+    list-style: none;
+    color: white;
+    padding-left: 0;
+}
+
+.wrapper-info {
+    column-gap: 120px;
+}
+
+#renungan-section {
+    padding: 108px 0;
 }
 
 @media (max-width: 992px) {
     .navbar {
         height: auto !important;
     }
-
     .container-cta {
         margin-top: 10px;
+    }
+    #hero-section {
+        height: 80vh;
+    }
+    .text-content {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    .text-sub-content {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    #services-section {
+        padding: 60px 0;
+    }
+    .heading {
+        color: var(--font-blue-default);
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .sub-heading {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .card-service {
+        width: 230px;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #C9C9C9;
+    }
+    .card-heading {
+        font-size: 20px;
+    }
+    .card-description {
+        font-size: 14px;
+    }
+    #footer {
+        padding: 60px 0;
+    }
+    .footer-font-logo {
+        font-size: 30px;
+        font-family: 'Gill Sans', sans-serif;
+    }
+    .wrapper-info {
+        column-gap: 70px;
+    }
+    .img-contact {
+        width: 80%;
+    }
+    #renungan-section {
+        padding: 60px 0;
+    }
+    .heading-renungan {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-service {
+        width: 210px;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #C9C9C9;
+    }
+    .card-heading {
+        font-size: 20px;
+    }
+    .card-description {
+        font-size: 14px;
+    }
+    .heading-renungan {
+        font-size: 18px;
     }
 }
